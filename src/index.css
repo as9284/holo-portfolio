@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .main-button {
+    @apply w-48 h-48 flex flex-col justify-center items-center rounded-md bg-neutral-700 border-2 text-xl 
+    uppercase font-bold drop-shadow-lg hover:bg-neutral-300 hover:text-neutral-800 hover:scale-105
+    focus:bg-neutral-300 focus:text-neutral-800 focus:scale-105 duration-200;
+  }
+
+  .main-icon {
+    @apply text-3xl my-2 group-hover:scale-150 group-focus:scale-150 duration-100;
+  }
+
+  .main-text {
+    @apply group-hover:scale-75 group-focus:scale-75 duration-100;
+  }
+}
