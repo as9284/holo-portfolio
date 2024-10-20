@@ -10,7 +10,7 @@
 
 @layer components {
   .main-button {
-    @apply w-60 h-56 flex flex-col justify-center items-center rounded-md bg-neutral-700 border-2 text-xl 
+    @apply w-60 h-56 flex flex-col justify-center items-center rounded-xl bg-neutral-700 border-2 text-xl 
     uppercase font-bold drop-shadow-lg hover:bg-neutral-300 hover:text-neutral-800 hover:scale-105
     focus:bg-neutral-300 focus:text-neutral-800 focus:scale-105 duration-200;
   }
