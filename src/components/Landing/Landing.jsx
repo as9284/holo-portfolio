@@ -8,7 +8,7 @@ export const Landing = ({ onShowSection }) => {
     <>
       <div className="min-w-[20rem] flex flex-wrap justify-center items-center p-1 text-neutral-200 gap-4">
         <button
-          className="main-button group"
+          className="main-icon-button group"
           onClick={() => onShowSection("projects")}
         >
           <span>
@@ -17,7 +17,7 @@ export const Landing = ({ onShowSection }) => {
           <span className="main-text">my projects</span>
         </button>
         <button
-          className="main-button group"
+          className="main-icon-button group"
           onClick={() => onShowSection("about")}
         >
           <span className="main-icon">
@@ -26,7 +26,7 @@ export const Landing = ({ onShowSection }) => {
           <span className="main-text">about me</span>
         </button>
         <button
-          className="main-button group"
+          className="main-icon-button group"
           onClick={() => onShowSection("contact")}
         >
           <span className="main-icon">

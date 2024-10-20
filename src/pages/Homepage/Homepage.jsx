@@ -27,7 +27,9 @@ export const Homepage = () => {
         {activeSection === "landing" && (
           <Landing onShowSection={handleShowSection} />
         )}
-        {activeSection === "projects" && <Projects />}
+        {activeSection === "projects" && (
+          <Projects onShowSection={handleShowSection} />
+        )}
         {activeSection === "about" && <About />}
         {activeSection === "contact" && <Contact />}
       </div>
