@@ -1,7 +1,22 @@
 import React from "react";
 import { BiSolidPlanet } from "react-icons/bi";
 
-export const Nav = () => {
+export const Nav = ({ activeSection }) => {
+  const getSectionText = () => {
+    switch (activeSection) {
+      case "landing":
+        return "Welcome to my portfolio";
+      case "projects":
+        return "Here are my projects";
+      case "about":
+        return "Learn more about me";
+      case "contact":
+        return "Get in touch with me";
+      default:
+        return "Welcome to my portfolio";
+    }
+  };
+
   return (
     <>
       <div className="min-w-[20rem] min-h-32 flex flex-col justify-center items-center p-4 text-neutral-200 text-center">
@@ -13,7 +28,7 @@ export const Nav = () => {
         </div>
 
         <p className="text-2xl md:text-4xl font-extralight py-2 drop-shadow-lg">
-          Welcome to my portfolio
+          {getSectionText()}
         </p>
       </div>
     </>
