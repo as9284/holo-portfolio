@@ -13,7 +13,7 @@ export const Contact = ({ onShowSection }) => {
           <div className="small-bl-corner"></div>
           <div className="small-br-corner"></div>
         </div>
-        back
+        home
       </button>
     </>
   );
