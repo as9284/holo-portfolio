@@ -6,7 +6,7 @@ import { RiFolderSettingsFill } from "react-icons/ri";
 export const Landing = ({ onShowSection }) => {
   return (
     <>
-      <div className="min-w-[20rem] flex flex-wrap justify-center items-center p-1 text-green-600 gap-8">
+      <div className="min-w-[20rem] flex flex-wrap justify-center items-center p-1 gap-8">
         <button
           className="main-icon-button group"
           onClick={() => onShowSection("projects")}

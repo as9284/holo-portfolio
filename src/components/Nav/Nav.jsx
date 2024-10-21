@@ -19,7 +19,7 @@ export const Nav = ({ activeSection }) => {
 
   return (
     <>
-      <div className="min-w-[20rem] min-h-32 flex flex-col justify-center items-center p-4 text-green-600 text-center">
+      <div className="min-w-[20rem] min-h-32 flex flex-col justify-center items-center p-4 text-center">
         <div className="w-full flex flex-col justify-center items-center animate-pulse">
           <BiSolidPlanet className="text-3xl md:text-5xl drop-shadow-neon-green" />
           <h1 className="text-xs md:text-base font-semibold drop-shadow-neon-green">

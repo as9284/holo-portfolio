@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-inter select-none;
+    @apply font-inter select-none text-green-600;
   }
 }
 
@@ -45,7 +45,7 @@
 
   /* Small button styles */
   .small-button {
-    @apply relative w-32 h-12 my-4 uppercase text-green-600 font-semibold 
+    @apply relative w-32 h-12 my-4 uppercase font-semibold 
     bg-green-900/10 hover:bg-green-900/40 duration-200;
   }
 
