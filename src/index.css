@@ -46,7 +46,7 @@
   /* Small button styles */
   .small-button {
     @apply relative w-32 h-12 my-4 uppercase font-semibold 
-    bg-green-900/10 hover:bg-green-900/40 active:bg-green-900/60 duration-100;
+    bg-green-900/20 hover:bg-green-900/40 active:bg-green-900/60 duration-100;
   }
 
   .small-tl-corner {
