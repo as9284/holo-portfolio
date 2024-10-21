@@ -9,24 +9,64 @@
 }
 
 @layer components {
+  /* Big button with icon styles */
   .main-icon-button {
-    @apply w-60 h-56 flex flex-col justify-center items-center rounded-xl bg-neutral-700 border-2 text-xl 
-    uppercase font-bold drop-shadow-lg hover:bg-neutral-300 hover:text-neutral-800 hover:scale-105
-    focus:bg-neutral-300 focus:text-neutral-800 focus:scale-105 duration-200;
+    @apply relative w-60 h-56 flex flex-col justify-center items-center 
+    text-xl uppercase bg-green-900/10 hover:bg-green-900/40 duration-200;
   }
 
   .main-icon {
-    @apply text-3xl my-2 group-hover:scale-150 group-focus:scale-150 duration-100;
+    @apply text-3xl my-2 drop-shadow-small-neon-green;
   }
 
   .main-text {
-    @apply group-hover:scale-75 group-focus:scale-75 duration-100;
+    @apply text-xl font-semibold drop-shadow-small-neon-green;
   }
 
+  .main-tl-corner {
+    @apply absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-6 group-hover:h-6 group-hover:border-green-600 duration-100;
+  }
+
+  .main-tr-corner {
+    @apply absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-6 group-hover:h-6 group-hover:border-green-600 duration-100;
+  }
+
+  .main-bl-corner {
+    @apply absolute bottom-0 left-0 w-2 h-2 border-b-2 border-l-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-6 group-hover:h-6 group-hover:border-green-600 duration-100;
+  }
+
+  .main-br-corner {
+    @apply absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-6 group-hover:h-6 group-hover:border-green-600 duration-100;
+  }
+
+  /* Small button styles */
   .small-button {
-    @apply w-32 h-12 my-4 rounded-xl uppercase text-neutral-200 font-semibold 
-    bg-neutral-700 border-2 hover:bg-neutral-300 hover:text-neutral-900 hover:scale-105 
-    focus:bg-neutral-300 focus:text-neutral-900 focus:scale-105 duration-200;
+    @apply relative w-32 h-12 my-4 uppercase text-green-600 font-semibold 
+    bg-green-900/10 hover:bg-green-900/40 duration-200;
+  }
+
+  .small-tl-corner {
+    @apply absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-[0.75rem] group-hover:h-[0.75rem] group-hover:border-green-600 duration-100;
+  }
+
+  .small-tr-corner {
+    @apply absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-[0.75rem] group-hover:h-[0.75rem] group-hover:border-green-600 duration-100;
+  }
+
+  .small-bl-corner {
+    @apply absolute bottom-0 left-0 w-2 h-2 border-b-2 border-l-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-[0.75rem] group-hover:h-[0.75rem] group-hover:border-green-600 duration-100;
+  }
+
+  .small-br-corner {
+    @apply absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 
+    border-green-800 drop-shadow-small-neon-green group-hover:w-[0.75rem] group-hover:h-[0.75rem] group-hover:border-green-600 duration-100;
   }
 }
 

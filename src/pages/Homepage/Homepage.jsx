@@ -22,7 +22,7 @@ export const Homepage = () => {
 
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col justify-center items-center bg-neutral-800 p-8 gap-1">
+      <div className="w-full min-h-screen flex flex-col justify-center items-center bg-black p-8 gap-1">
         <Nav activeSection={activeSection} />
         {activeSection === "landing" && (
           <Landing onShowSection={handleShowSection} />
@@ -30,8 +30,12 @@ export const Homepage = () => {
         {activeSection === "projects" && (
           <Projects onShowSection={handleShowSection} />
         )}
-        {activeSection === "about" && <About />}
-        {activeSection === "contact" && <Contact />}
+        {activeSection === "about" && (
+          <About onShowSection={handleShowSection} />
+        )}
+        {activeSection === "contact" && (
+          <Contact onShowSection={handleShowSection} />
+        )}
       </div>
     </>
   );

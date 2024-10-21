@@ -1,5 +1,11 @@
 import React from "react";
 
-export const Contact = () => {
-  return <div>Contact</div>;
+export const Contact = ({ onShowSection }) => {
+  return (
+    <>
+      <button className="small-button" onClick={() => onShowSection("landing")}>
+        back
+      </button>
+    </>
+  );
 };

@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      dropShadow: {
+        "neon-green": "0px 0px 6px rgba(0, 255, 0, 0.3)",
+        "small-neon-green": "0px 0px 2px rgba(0, 255, 0, 0.2)",
+      },
     },
   },
   plugins: [],
