@@ -12,7 +12,7 @@
   /* Big button with icon styles */
   .main-icon-button {
     @apply relative w-60 h-56 flex flex-col justify-center items-center 
-    text-xl uppercase bg-green-900/10 hover:bg-green-900/40 duration-200;
+    text-xl uppercase bg-green-900/10 hover:bg-green-900/40 duration-100;
   }
 
   .main-icon {
